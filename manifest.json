@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "clash of code test case output",
+  "version": "1.0.2",
+  "description": "Test",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.codingame.com/clashofcode/clash/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
